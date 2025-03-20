@@ -25,6 +25,12 @@ public class complexDriver
         Complex d = c.conjugate(); 
         System.out.println("d: Expecting 4 + 8i");
         System.out.println(d);
+        
+        Complex d2 = d.conjugate();
+        if (d2.abs() == d.abs())
+        {
+            System.out.println("a ok");
+        }
 
         Complex e = new Complex(2,-1);
         System.out.println("e: Expecting 2 - i");
